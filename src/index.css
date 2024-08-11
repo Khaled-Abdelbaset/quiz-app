@@ -24,6 +24,7 @@ html {
 
 body {
   min-height: 100vh;
+  min-width: 100%;
   color: var(--color-light);
   background-color: var(--color-darkest);
   padding: 3.2rem;
@@ -37,11 +38,11 @@ body {
 }
 
 .quiz {
-  width: 50rem;
+  width: 100%;
 }
 
 .app-header {
-  width: 66rem;
+  /* width: 66rem; */
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -69,9 +70,19 @@ img {
   width: 14rem;
 }
 
+
 h1 {
   font-family: "Codystar";
   font-size: 5.6rem;
+}
+
+@media screen and (max-width: 576px) {
+  img {
+    width: 5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
