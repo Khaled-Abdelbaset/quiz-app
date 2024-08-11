@@ -3,7 +3,7 @@ import { useQuestions } from "../../context/QuestionsContext";
 import Loader from "../helpers/Loader";
 import Error from "../helpers/Error";
 
-function StartScreen() {
+function Home() {
   const navigate = useNavigate();
   const { status, numQuestions, dispatch } = useQuestions();
 
@@ -25,4 +25,4 @@ function StartScreen() {
   );
 }
 
-export default StartScreen;
+export default Home;

@@ -1,8 +1,8 @@
 function NotFound() {
   return (
     <div>
-      <p className="error">
-        404 Page Not found.
+      <p className="not-found">
+        <span>404</span> Page Not Found
       </p>
     </div>
   );

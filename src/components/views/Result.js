@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useQuestions } from "../../context/QuestionsContext";
+import { useEffect } from "react";
 
-function FinishScreen() {
+function Result() {
   const navigate = useNavigate();
-  const { dispatch, maxPoints, points, highscore } = useQuestions();
+  const { status, dispatch, maxPoints, points, highscore } = useQuestions();
   const percent = (points / maxPoints) * 100;
   let emoji;
 
@@ -29,6 +30,10 @@ function FinishScreen() {
     navigate("/");
   }
 
+  useEffect(() => {
+    if (status === "ready") navigate("/");
+  }, [status, navigate]);
+
   return (
     <>
       <p className="result">
@@ -43,4 +48,4 @@ function FinishScreen() {
   );
 }
 
-export default FinishScreen;
+export default Result;

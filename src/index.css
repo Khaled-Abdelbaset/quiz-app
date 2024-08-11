@@ -36,7 +36,7 @@ body {
   justify-content: center;
 }
 
-.main {
+.quiz {
   width: 50rem;
 }
 
@@ -54,6 +54,14 @@ body {
   font-weight: 500;
   padding: 2rem;
   background-color: #495057;
+  border-radius: 100px;
+}
+
+.not-found {
+  text-align: center;
+  font-size:5rem;
+  font-weight: 500;
+  padding: 2rem;
   border-radius: 100px;
 }
 
